@@ -24,12 +24,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        * {
-            font-family: "Outfit", sans-serif;
-        }
-    </style>
-
+    <style>* {font-family: "Outfit", sans-serif; }</style>
 
 </head>
 
@@ -41,16 +36,18 @@
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-1xl mt-15 mx-auto rounded-2xl">
             <div class="card-body">
                 <fieldset class="fieldset space-y-2">
-                    <label class="label font-bold text-lg text-black">Mobile Number</label>
-                    <input type="text" minlength="11" maxlength="11" class="input rounded-full bg-base-200" placeholder="Enter your number" />
+                    <label  class="label font-bold text-lg text-black">Mobile Number</label>
+                    <input id="input-number" type="text" minlength="11" maxlength="11" class="input rounded-full bg-base-200" placeholder="Enter your number" />
                     <label class="label font-bold text-lg text-black">4 Digit Pin</label>
-                    <input type="password"minlength="4" maxlength="4" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+                    <input id="input-pin" type="password"minlength="4" maxlength="4" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
                     <div><a class="link link-hover">Forgot password?</a></div>
-                    <button class="btn btn-primary rounded-full mt-4">Login</button>
+                    <button id="login-btn" class="btn btn-primary rounded-full mt-4">Login</button>
                 </fieldset>
             </div>
+        </div>
     </section>
 
+    <script src="/script/login.js"></script>
 </body>
 
 </html>
