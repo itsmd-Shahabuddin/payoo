@@ -13,4 +13,8 @@ document.getElementById('login-btn').addEventListener("click",function(){
             alert("Login Failed");
             return;
     }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> f1a33b7 (added the welcome page/home page)
