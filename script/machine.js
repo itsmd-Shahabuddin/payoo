@@ -19,3 +19,18 @@ function setBalance(value){
     const balanceElement=document.getElementById("balance");
     balanceElement.innerText=value;
 }
+
+// To show only the click section form 
+
+function showOnly(id){
+    const addmoney=document.getElementById("add-money");
+    const cashout=document.getElementById("cash-out");
+
+    addmoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+    
+
+    const selected=document.getElementById(id);
+    selected.classList.remove("hidden");
+    
+};

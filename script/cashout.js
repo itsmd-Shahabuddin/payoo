@@ -19,6 +19,16 @@ document.getElementById("cashout-btn").addEventListener("click",function(){
     if(pin =="1234"){
         alert("Cashout Successful");
         setBalance(newBalance);
+
+        const history=document.getElementById("history-container");
+        const newHistory=document.createElement("div");
+        newHistory.innerHTML=`
+
+        <div class="transaction card p-4 bg-base-100">
+            Cashout $${cashoutAmount} to ${cashoutNumber} at ${new Date()}
+            </div>
+        `;
+        history.append(newHistory);
         
     }
     else{

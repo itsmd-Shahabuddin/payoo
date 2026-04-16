@@ -62,11 +62,11 @@
         <h1 class="font-bold text-2xl">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
         <p class="text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low.</p>
         <div class="grid grid-cols-3 gap-3 mt-6">
-            <button class="btn rounded-xl flex-col h-24 py-3 ">
+            <button onclick="showOnly('add-money')" class="btn rounded-xl flex-col h-24 py-3 ">
                 <img src="./assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
-            <button class="btn rounded-xl flex-col h-24 py-3 ">
+            <button onclick="showOnly('cash-out')" class="btn rounded-xl flex-col h-24 py-3 ">
                 <img src="./assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
@@ -126,7 +126,7 @@
 
     <!-- Cashout Section -->
 
-    <section class="w-11/12 mx-auto py-4 mb-5 hidden">
+    <section id="cash-out" class="w-11/12 mx-auto mb-5 hidden">
         <h1 class="font-semibold text-lg ml-3">Cash Out</h1>
         <div class="bg-base-100 w-full max-w-sm shrink-0 shadow-1xl mt-6 mx-auto rounded-2xl">
             <div class="card-body">
@@ -147,6 +147,15 @@
                     <button id="cashout-btn" class="btn btn-primary rounded-full mt-4">Withdraw Money</button>
                 </fieldset>
             </div>
+        </div>
+    </section>
+
+    <!-- Transaction history -->
+
+    <section id="history"  class="w-11/12 mx-auto py-4 mb-5">
+        <h1 class="font-semibold text-lg ml-3 mb-4">Transaction History</h1>
+        <div class="space-y-5" id="history-container">
+            
         </div>
     </section>
 

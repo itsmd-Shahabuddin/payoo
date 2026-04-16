@@ -19,6 +19,17 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
         alert(`Money added from
             ${bankName} at ${new Date()}`);
         setBalance(newBalance);
+
+        const history=document.getElementById("history-container");
+        const newHistory=document.createElement("div");
+        newHistory.innerHTML=`
+
+        <div class="transaction card p-4 bg-base-100">
+            Money added from
+            ${bankName} ,acc-no ${bankAcNumber} at ${new Date()}
+            </div>
+        `;
+        history.append(newHistory);
     }
     else{
         alert("Invalid Pin");
