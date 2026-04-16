@@ -30,6 +30,11 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
             </div>
         `;
         history.append(newHistory);
+
+        clearInput("add-money-bank")
+        clearInput("add-money-number")
+        clearInput("add-money-amount")
+        clearInput("add-money-pin")
     }
     else{
         alert("Invalid Pin");

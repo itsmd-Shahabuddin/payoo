@@ -43,3 +43,9 @@ function showOnly(id){
     selected.classList.remove("hidden");
     
 };
+
+// Clearing all the input
+
+ function clearInput(id){
+    document.getElementById(id).value="";
+ }
