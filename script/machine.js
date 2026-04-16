@@ -25,10 +25,17 @@ function setBalance(value){
 function showOnly(id){
     const addmoney=document.getElementById("add-money");
     const cashout=document.getElementById("cash-out");
+    const transfermoney=document.getElementById("transfer-money");
+    const getbonus=document.getElementById("get-bonus");
+    const paybill=document.getElementById("pay-bill");
     const history=document.getElementById("history");
+   
 
     addmoney.classList.add("hidden");
     cashout.classList.add("hidden");
+    transfermoney.classList.add("hidden");
+    getbonus.classList.add("hidden");
+    paybill.classList.add("hidden");
     history.classList.add("hidden");
     
 
