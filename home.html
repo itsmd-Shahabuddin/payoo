@@ -24,7 +24,11 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>* {font-family: "Outfit", sans-serif; }</style>
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
 
 </head>
 
@@ -153,7 +157,7 @@
                 <fieldset class="fieldset space-y-2">
 
                     <label class="label font-medium text-lg">User Account Number</label>
-                    <input id="cashout-number" type="text" minlength="11" maxlength="11"
+                    <input id="transferAc-number" type="text" minlength="11" maxlength="11"
                         class="w-full input rounded-full bg-base-200" placeholder="Enter 11 digit number" />
 
                     <label class="label font-medium text-lg">Amount</label>
@@ -225,33 +229,36 @@
 
     <!-- Latest Payment section -->
 
-    <!-- <section id="history"  class="w-11/12 mx-auto py-4 mb-5 hidden">
+    <section id="latest-payment" class="w-11/12 mx-auto py-4 mb-5">
         <h1 class="font-semibold text-lg ml-3 mb-4">lataest Payment</h1>
-        <div class="latestpayment-container">
-            <div>
+        <div  id= "latest-payment-container" class=" flex items-center gap-3">
+            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
                 <img src="/assets/opt-1.png" alt="">
-                <h1></h1>
+            </div>
+            <div>
+                <h2 class="font-semibold"></h2>
+                <p class="text-sm text-gray-500">    
+                </p>
+                <p class="text-xs text-gray-400">  
+                </p>
             </div>
         </div>
-
-
-    </section> -->
+    </section>
 
     <!-- Transaction history -->
 
     <section id="history" class="w-11/12 mx-auto py-4 mb-5 hidden">
         <h1 class="font-semibold text-lg ml-3 mb-4">Transaction History</h1>
         <div class="space-y-5" id="history-container">
-            
+
 
         </div>
     </section>
 
     <script src="/script/machine.js"></script>
     <script src="/script/addmoney.js"></script>
-
-
     <script src="/script/cashout.js"></script>
+    <script src="/script/transfermoney.js"></script>
 </body>
 
 </html>
